@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vier gewinnt</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" type="module"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="controls">
+      <button id="undo">Undo</button>
+      <button id="newgame">New game</button>
+      <button id="load">Load</button>
+      <button id="save">Save</button>
+    </div>
+    <script type="module">
+      import { start, undo, restart, load, save } from "./index.js";
+      document.querySelector("#undo").addEventListener("click", undo);
+      document.querySelector("#newgame").addEventListener("click", restart);
+      document.querySelector("#load").addEventListener("click", load);
+      document.querySelector("#save").addEventListener("click", save);
+      start();
+    </script>
+  </body>
+</html>
