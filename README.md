@@ -24,8 +24,11 @@ Viel Spaß beim Spielen!
 # Kernfunktionen
 
 • Load und Save: Möglichkeit zum Persistieren des Spielzustands.
+
 • New Game: startet ein neues Spiel.
+
 • Undo: Mehrfaches rückgängig machen der Spielzüge
+
 • Alerts, welcher Spieler gewonnen hat.
 
 # Source Code
